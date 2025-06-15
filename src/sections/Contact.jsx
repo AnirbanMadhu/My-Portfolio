@@ -30,16 +30,16 @@ const Contact = () => {
     try {
       console.log("From submitted:", formData);
       await emailjs.send(
-        "service_79b0nyj",
-        "template_17us8im",
+        "service_u04wep3",
+        "template_6xmz1yg",
         {
           from_name: formData.name,
-          to_name: "Ali",
+          to_name: "Anirban Madhu",
           from_email: formData.email,
-          to_email: "AliSanatiDev@gmail.com",
+          to_email: "anirbanmadhu20@gmail.com",
           message: formData.message,
         },
-        "pn-Bw_mS1_QQdofuV"
+        "w0E0s6lKeGp8qcglb"
       );
       setIsLoading(false);
       setFormData({ name: "", email: "", message: "" });
@@ -78,7 +78,7 @@ const Contact = () => {
               name="name"
               type="text"
               className="field-input field-input-focus"
-              placeholder="John Doe"
+              placeholder="Enter Your Name"
               autoComplete="name"
               value={formData.name}
               onChange={handleChange}
@@ -94,7 +94,7 @@ const Contact = () => {
               name="email"
               type="email"
               className="field-input field-input-focus"
-              placeholder="JohnDoe@email.com"
+              placeholder="Enter Your Email"
               autoComplete="email"
               value={formData.email}
               onChange={handleChange}
